@@ -57,7 +57,7 @@ for i in range(0, 4):
 
 
 def test_distribution():
-    for i in range(0, 100000):
+    for i in range(0, 1000):
         b = Base()
         for n in nodes.vnodes:
             (c, rangeFrom, rangeTo) = n
@@ -68,3 +68,5 @@ def test_distribution():
                 for h in hosts:
                     if c in range(h.rangeFrom, h.rangeTo + 1):
                         print(h)
+
+test_distribution()
